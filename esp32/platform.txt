@@ -2,29 +2,18 @@ name=ESP32 (2.0.17)
 version=2.0.17
 
 tools.xtensa-esp32-elf-gcc.path={runtime.platform.path}/{build.tarch}-{build.target}-elf-gcc
-#tools.xtensa-esp32-elf-gcc.path={runtime.tools.xtensa-esp32-elf-gcc.path}
+#tools.xtensa-esp32-elf-gcc.path={runtime.platform.path}/{build.tarch}-{build.target}-elf-gcc-12
 
 tools.xtensa-esp32s2-elf-gcc.path={runtime.platform.path}/{build.tarch}-{build.target}-elf-gcc
-#tools.xtensa-esp32s2-elf-gcc.path={runtime.tools.xtensa-esp32s2-elf-gcc.path}
-
 tools.xtensa-esp32s3-elf-gcc.path={runtime.platform.path}/{build.tarch}-{build.target}-elf-gcc
-#tools.xtensa-esp32s3-elf-gcc.path={runtime.tools.xtensa-esp32s3-elf-gcc.path}
-
 tools.xtensa-esp-elf-gdb.path={runtime.platform.path}/{build.tarch}-{build.target}-elf-gdb
-#tools.xtensa-esp-elf-gdb.path={runtime.tools.xtensa-esp-elf-gdb.path}
-
 tools.riscv32-esp-elf-gcc.path={runtime.platform.path}/{build.tarch}-{build.target}-elf-gcc
-#tools.riscv32-esp-elf-gcc.path={runtime.tools.riscv32-esp-elf-gcc.path}
-
 tools.riscv32-esp-elf-gdb.path={runtime.platform.path}/{build.tarch}-{build.target}-elf-gdb
-#tools.riscv32-esp-elf-gdb.path={runtime.tools.riscv32-esp-elf-gdb.path}
 
 tools.esptool_py.path={runtime.platform.path}
 tools.esptool_py.cmd=esptool
 tools.esptool_py.cmd.linux=tools/esptool_py/esptool.py
-#tools.esptool_py.cmd.linux=esptool.py
 tools.esptool_py.cmd.windows=tools\esptool_py\esptool.exe
-#tools.esptool_py.cmd.windows=esptool.exe
 
 tools.esptool_py.network_cmd=python3 "{runtime.platform.path}/tools/espota.py" -r
 tools.esptool_py.network_cmd.windows="{runtime.platform.path}\tools\espota.exe" -r

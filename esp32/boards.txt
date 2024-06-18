@@ -170,6 +170,8 @@ esp32s3.menu.UploadMode.cdc.upload.wait_for_upload_port=true
 
 esp32s3.menu.PartitionScheme.default=Default 4MB with spiffs (1.2MB APP/1.5MB SPIFFS)
 esp32s3.menu.PartitionScheme.default.build.partitions=default
+esp32s3.menu.PartitionScheme.app1M5=4MB with spifs (1.5MB APP/1MB SPIFS)
+esp32s3.menu.PartitionScheme.app1M5.build.partitions=app1M5_spifs1M
 esp32s3.menu.PartitionScheme.defaultffat=Default 4MB with ffat (1.2MB APP/1.5MB FATFS)
 esp32s3.menu.PartitionScheme.defaultffat.build.partitions=default_ffat
 esp32s3.menu.PartitionScheme.default_8MB=8M with spiffs (3MB APP/1.5MB SPIFFS)
@@ -317,6 +319,8 @@ esp32c3.menu.CDCOnBoot.cdc.build.cdc_on_boot=1
 
 esp32c3.menu.PartitionScheme.default=Default 4MB with spiffs (1.2MB APP/1.5MB SPIFFS)
 esp32c3.menu.PartitionScheme.default.build.partitions=default
+esp32c3.menu.PartitionScheme.app1M5=4MB with spifs (1.5MB APP/1MB SPIFS)
+esp32c3.menu.PartitionScheme.app1M5.build.partitions=app1M5_spifs1M
 esp32c3.menu.PartitionScheme.defaultffat=Default 4MB with ffat (1.2MB APP/1.5MB FATFS)
 esp32c3.menu.PartitionScheme.defaultffat.build.partitions=default_ffat
 esp32c3.menu.PartitionScheme.default_8MB=8M with spiffs (3MB APP/1.5MB SPIFFS)
@@ -506,6 +510,8 @@ esp32s2.menu.PSRAM.enabled.build.defines=-DBOARD_HAS_PSRAM
 
 esp32s2.menu.PartitionScheme.default=Default 4MB with spiffs (1.2MB APP/1.5MB SPIFFS)
 esp32s2.menu.PartitionScheme.default.build.partitions=default
+esp32s2.menu.PartitionScheme.app1M5=4MB with spifs (1.5MB APP/1MB SPIFS)
+esp32s2.menu.PartitionScheme.app1M5.build.partitions=app1M5_spifs1M
 esp32s2.menu.PartitionScheme.defaultffat=Default 4MB with ffat (1.2MB APP/1.5MB FATFS)
 esp32s2.menu.PartitionScheme.defaultffat.build.partitions=default_ffat
 esp32s2.menu.PartitionScheme.default_8MB=8M with spiffs (3MB APP/1.5MB SPIFFS)
@@ -672,6 +678,8 @@ esp32.menu.PSRAM.enabled.build.extra_libs=
 
 esp32.menu.PartitionScheme.default=Default 4MB with spiffs (1.2MB APP/1.5MB SPIFFS)
 esp32.menu.PartitionScheme.default.build.partitions=default
+esp32.menu.PartitionScheme.app1M5=4MB with spifs (1.5MB APP/1MB SPIFS)
+esp32.menu.PartitionScheme.app1M5.build.partitions=app1M5_spifs1M
 esp32.menu.PartitionScheme.defaultffat=Default 4MB with ffat (1.2MB APP/1.5MB FATFS)
 esp32.menu.PartitionScheme.defaultffat.build.partitions=default_ffat
 esp32.menu.PartitionScheme.default_8MB=8M with spiffs (3MB APP/1.5MB SPIFFS)
@@ -835,6 +843,8 @@ esp32da.build.event_core=
 
 esp32da.menu.PartitionScheme.default=Default 4MB with spiffs (1.2MB APP/1.5MB SPIFFS)
 esp32da.menu.PartitionScheme.default.build.partitions=default
+esp32da.menu.PartitionScheme.app1M5=4MB with spifs (1.5MB APP/1MB SPIFS)
+esp32da.menu.PartitionScheme.app1M5.build.partitions=app1M5_spifs1M
 esp32da.menu.PartitionScheme.defaultffat=Default 4MB with ffat (1.2MB APP/1.5MB FATFS)
 esp32da.menu.PartitionScheme.defaultffat.build.partitions=default_ffat
 esp32da.menu.PartitionScheme.default_8MB=8M with spiffs (3MB APP/1.5MB SPIFFS)
@@ -994,6 +1004,8 @@ esp32wrover.build.extra_libs=
 
 esp32wrover.menu.PartitionScheme.default=Default 4MB with spiffs (1.2MB APP/1.5MB SPIFFS)
 esp32wrover.menu.PartitionScheme.default.build.partitions=default
+esp32wrover.menu.PartitionScheme.app1M5=4MB with spifs (1.5MB APP/1MB SPIFS)
+esp32wrover.menu.PartitionScheme.app1M5.build.partitions=app1M5_spifs1M
 esp32wrover.menu.PartitionScheme.defaultffat=Default 4MB with ffat (1.2MB APP/1.5MB FATFS)
 esp32wrover.menu.PartitionScheme.defaultffat.build.partitions=default_ffat
 esp32wrover.menu.PartitionScheme.default_8MB=8M with spiffs (3MB APP/1.5MB SPIFFS)
@@ -1222,6 +1234,8 @@ esp32s3box.menu.DFUOnBoot.dfu.build.dfu_on_boot=1
 
 esp32s3box.menu.PartitionScheme.default=Default 4MB with spiffs (1.2MB APP/1.5MB SPIFFS)
 esp32s3box.menu.PartitionScheme.default.build.partitions=default
+esp32s3box.menu.PartitionScheme.app1M5=4MB with spifs (1.5MB APP/1MB SPIFS)
+esp32s3box.menu.PartitionScheme.app1M5.build.partitions=app1M5_spifs1M
 esp32s3box.menu.PartitionScheme.defaultffat=Default 4MB with ffat (1.2MB APP/1.5MB FATFS)
 esp32s3box.menu.PartitionScheme.defaultffat.build.partitions=default_ffat
 esp32s3box.menu.PartitionScheme.default_8MB=8M with spiffs (3MB APP/1.5MB SPIFFS)
@@ -1336,6 +1350,8 @@ esp32s3usbotg.menu.UploadMode.cdc.upload.wait_for_upload_port=true
 
 esp32s3usbotg.menu.PartitionScheme.default=Default 4MB with spiffs (1.2MB APP/1.5MB SPIFFS)
 esp32s3usbotg.menu.PartitionScheme.default.build.partitions=default
+esp32s3usbotg.menu.PartitionScheme.app1M5=4MB with spifs (1.5MB APP/1MB SPIFS)
+esp32s3usbotg.menu.PartitionScheme.app1M5.build.partitions=app1M5_spifs1M
 esp32s3usbotg.menu.PartitionScheme.defaultffat=Default 4MB with ffat (1.2MB APP/1.5MB FATFS)
 esp32s3usbotg.menu.PartitionScheme.defaultffat.build.partitions=default_ffat
 esp32s3usbotg.menu.PartitionScheme.default_8MB=8M with spiffs (3MB APP/1.5MB SPIFFS)
@@ -1442,6 +1458,8 @@ esp32s3camlcd.menu.EventsCore.0.build.event_core=-DARDUINO_EVENT_RUNNING_CORE=0
 
 esp32s3camlcd.menu.PartitionScheme.default=Default 4MB with spiffs (1.2MB APP/1.5MB SPIFFS)
 esp32s3camlcd.menu.PartitionScheme.default.build.partitions=default
+esp32s3calmcd.menu.PartitionScheme.app1M5=4MB with spifs (1.5MB APP/1MB SPIFS)
+esp32s3camlcd.menu.PartitionScheme.app1M5.build.partitions=app1M5_spifs1M
 esp32s3camlcd.menu.PartitionScheme.defaultffat=Default 4MB with ffat (1.2MB APP/1.5MB FATFS)
 esp32s3camlcd.menu.PartitionScheme.defaultffat.build.partitions=default_ffat
 esp32s3camlcd.menu.PartitionScheme.default_8MB=8M with spiffs (3MB APP/1.5MB SPIFFS)
@@ -1565,6 +1583,8 @@ esp32s2usb.menu.FlashSize.16M.build.flash_size=16MB
 
 esp32s2usb.menu.PartitionScheme.default=Default 4MB with spiffs (1.2MB APP/1.5MB SPIFFS)
 esp32s2usb.menu.PartitionScheme.default.build.partitions=default
+esp32s2usb.menu.PartitionScheme.app1M5=4MB with spifs (1.5MB APP/1MB SPIFS)
+esp32s2usb.menu.PartitionScheme.app1M5.build.partitions=app1M5_spifs1M
 esp32s2usb.menu.PartitionScheme.defaultffat=Default 4MB with ffat (1.2MB APP/1.5MB FATFS)
 esp32s2usb.menu.PartitionScheme.defaultffat.build.partitions=default_ffat
 esp32s2usb.menu.PartitionScheme.default_8MB=8M with spiffs (3MB APP/1.5MB SPIFFS)
@@ -1669,6 +1689,8 @@ esp32wroverkit.menu.PartitionScheme.default=Default 4MB with spiffs (1.2MB APP/1
 esp32wroverkit.menu.PartitionScheme.default.build.partitions=default
 esp32wroverkit.menu.PartitionScheme.defaultffat=Default 4MB with ffat (1.2MB APP/1.5MB FATFS)
 esp32wroverkit.menu.PartitionScheme.defaultffat.build.partitions=default_ffat
+esp32wroverkit.menu.PartitionScheme.app1M5=4MB with spifs (1.5MB APP/1MB SPIFS)
+esp32wroverkit.menu.PartitionScheme.app1M5.build.partitions=app1M5_spifs1M
 esp32wroverkit.menu.PartitionScheme.default_8MB=8M with spiffs (3MB APP/1.5MB SPIFFS)
 esp32wroverkit.menu.PartitionScheme.default_8MB.build.partitions=default_8MB
 esp32wroverkit.menu.PartitionScheme.default_8MB.upload.maximum_size=3342336
@@ -1837,6 +1859,8 @@ esp32cam.menu.PartitionScheme.huge_app.upload.maximum_size=3145728
 esp32cam.menu.PartitionScheme.min_spiffs=Minimal SPIFFS (1.9MB APP with OTA/190KB SPIFFS)
 esp32cam.menu.PartitionScheme.min_spiffs.build.partitions=min_spiffs
 esp32cam.menu.PartitionScheme.min_spiffs.upload.maximum_size=1966080
+esp32cam.menu.PartitionScheme.app1M5=4MB with spifs (1.5MB APP/1MB SPIFS)
+esp32cam.menu.PartitionScheme.app1M5.build.partitions=app1M5_spifs1M
 esp32cam.menu.PartitionScheme.default=Regular 4MB with spiffs (1.2MB APP/1.5MB SPIFFS)
 esp32cam.menu.PartitionScheme.default.build.partitions=default
 esp32cam.menu.PartitionScheme.defaultffat=Regular 4MB with ffat (1.2MB APP/1.5MB FATFS)
