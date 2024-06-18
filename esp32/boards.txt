@@ -1458,7 +1458,7 @@ esp32s3camlcd.menu.EventsCore.0.build.event_core=-DARDUINO_EVENT_RUNNING_CORE=0
 
 esp32s3camlcd.menu.PartitionScheme.default=Default 4MB with spiffs (1.2MB APP/1.5MB SPIFFS)
 esp32s3camlcd.menu.PartitionScheme.default.build.partitions=default
-esp32s3calmcd.menu.PartitionScheme.app1M5=4MB with spifs (1.5MB APP/1MB SPIFS)
+esp32s3camlcd.menu.PartitionScheme.app1M5=4MB with spifs (1.5MB APP/1MB SPIFS)
 esp32s3camlcd.menu.PartitionScheme.app1M5.build.partitions=app1M5_spifs1M
 esp32s3camlcd.menu.PartitionScheme.defaultffat=Default 4MB with ffat (1.2MB APP/1.5MB FATFS)
 esp32s3camlcd.menu.PartitionScheme.defaultffat.build.partitions=default_ffat
