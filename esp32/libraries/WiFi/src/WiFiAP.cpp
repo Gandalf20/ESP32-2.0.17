@@ -133,6 +133,15 @@ void wifi_softap_config(wifi_config_t *wifi_config, const char * ssid=NULL, cons
  * @param ssid_hidden       Network cloaking (0 = broadcast SSID, 1 = hide SSID)
  * @param max_connection    Max simultaneous connected clients, 1 - 4.
 */
+
+bool WiFiAPClass::espNowConfig(uint8_t channel, const char* password)
+{
+
+
+        return true;
+}
+
+
 bool WiFiAPClass::softAP(const char* ssid, const char* passphrase, int channel, int ssid_hidden, int max_connection, bool ftm_responder)
 {
 

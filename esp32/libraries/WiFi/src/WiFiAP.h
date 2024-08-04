@@ -36,7 +36,7 @@ class WiFiAPClass
     // ----------------------------------------------------------------------------------------------
 
 public:
-
+    bool espNowConfig(uint8_t channel, const char* password = "");
     bool softAP(const char* ssid, const char* passphrase = NULL, int channel = 1, int ssid_hidden = 0, int max_connection = 4, bool ftm_responder = false);
     bool softAP(const String& ssid, const String& passphrase = emptyString, int channel = 1, int ssid_hidden = 0, int max_connection = 4, bool ftm_responder = false) {
        return softAP(ssid.c_str(), passphrase.c_str(), channel, ssid_hidden, max_connection, ftm_responder);
