@@ -137,9 +137,22 @@ void wifi_softap_config(wifi_config_t *wifi_config, const char * ssid=NULL, cons
 bool WiFiAPClass::espNowConfig(uint8_t channel, const char* password)
 {
 
+    if(!WiFi.enableAP(true)) {
+        // enable AP failed
+        log_e("enable AP first!");
+        return false;
+    }
 
-        return true;
+    wifi_config_t conf;
+    esp_wifi_get_config((wifi_interface_t)WIFI_IF_AP, &conf);
+    conf.ap.channel = channel;
+    conf.ap.ssid_hidden = 1;
+    conf.ap.beacon_interval = 60000;
+    esp_wifi_set_config((wifi_interface_t)WIFI_IF_AP, &conf);
+       return true;
+
 }
+
 
 
 bool WiFiAPClass::softAP(const char* ssid, const char* passphrase, int channel, int ssid_hidden, int max_connection, bool ftm_responder)
